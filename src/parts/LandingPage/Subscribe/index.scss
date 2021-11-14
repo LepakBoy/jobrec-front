@@ -1,0 +1,55 @@
+.subscribe {
+  &__card {
+    display: flex;
+    position: relative;
+    background-color: #5e50a1;
+    border-radius: 2.5rem 0.5rem;
+    height: 200px;
+
+    &--content {
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      align-items: center;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        padding: 0 4.375rem;
+        flex-flow: row;
+        justify-content: space-between;
+      }
+
+      .btn__started {
+        &.white {
+          background-color: #fff;
+          color: #5e50a1;
+        }
+      }
+
+      .content__text {
+        font-size: 1.25rem !important;
+        color: #fff;
+        line-height: 3.5rem;
+        margin-bottom: 1.25rem;
+
+        @media (min-width: 768px) {
+          font-size: 2.375rem !important;
+          margin-bottom: 0;
+        }
+
+        span {
+          @media (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    .icon__wave3 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
